@@ -14,8 +14,6 @@ variables:
   # Web app name
   webAppName: 'testgame-bc'
   
-  # Resource group
-  resourceGroupName: 'test-bcRG'
  
   # Environment name
   environmentName: 'testgame-bc'
@@ -36,7 +34,6 @@ stages:
       inputs:
         azureSubscription: $(azureSubscription)
         appName: $(webAppName)
-        resourceGroupName: $(resourceGroupName)
         appSettings: |
           [
             {
